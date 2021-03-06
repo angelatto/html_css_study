@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style type="text/css">
+		table {
+			width: 100%; /* %는 부모가 가지고 있는 폭 전체를 차지하겠다. */
+		}
+
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th{
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>bno</th>
+				<th>title</th>
+				<th>content</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>오늘은 따뜻해?</td>
+				<td>온도가 11도까지올라간다네요. </td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>목요일 입니다. </td>
+				<td>온도가 11도까지올라간다네요. </td>
+			</tr>
+			<tr>
+				<td colspan="3"> 버튼1 버튼2 </td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
