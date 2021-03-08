@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style type="text/css">
+		.flexContainer {
+			display: flex;  /* div가 inline-block 특성을 갖게 된다.  */
+			background-color: blue;
+			padding: 10px;
+			justify-content: center; /* 한 행에서 좌우, 센터 배 */
+			flex-direction: row; /* default가 row 방향이다. */
+			height: 300px;  
+			align-items: center; /* 탑, 미들, 바텀 */
+		}
+		
+		.flexContainer > div {
+			background-color: white;
+			margin: 10px;
+			/* height를 안주면 부모 height만큼 길이가 늘어난다. */
+			height: 100px; 
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="flexContainer">
+		<div style="flex:1">1</div>
+		<div style="flex:1">2</div>
+		<div style="flex:3">3</div>
+	</div>
+</body>
+</html>
